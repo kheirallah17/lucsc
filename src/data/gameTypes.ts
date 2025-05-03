@@ -4694,6 +4694,172 @@ spec:
         testCases: [{ input: "", expectedOutput: "3" }]
       },
       {
+        "id": "read-simple-addition-l1",
+        "title": "Simple Addition.L1.java",
+        "description": "What does this print?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        int a = 5;
+        int b = 3;
+        System.out.println(a + b);
+      }
+    }"`,
+        "solution": "8",
+        "testCases": [{ "input": "", "expectedOutput": "8" }]
+      },
+      {
+        "id": "read-string-concat-l1",
+        "title": "String Concatenation.L1.java",
+        "description": "What gets printed?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        String s1 = "Hello";
+        String s2 = "World";
+        System.out.println(s1 + " " + s2);
+      }
+    }"`,
+        "solution": "Hello World",
+        "testCases": [{ "input": "", "expectedOutput": "Hello World" }]
+      },
+      {
+        "id": "read-boolean-evaluation-l1",
+        "title": "Boolean Evaluation.L1.java",
+        "description": "What will be printed?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        boolean a = true;
+        boolean b = false;
+        System.out.println(a && b);
+      }
+    }"`,
+        "solution": "false",
+        "testCases": [{ "input": "", "expectedOutput": "false" }]
+      },
+      {
+        "id": "read-array-access-l1",
+        "title": "Array Indexing.L1.java",
+        "description": "What does this print?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        int[] numbers = {10, 20, 30};
+        System.out.println(numbers[1]);
+      }
+    }"`,
+        "solution": "20",
+        "testCases": [{ "input": "", "expectedOutput": "20" }]
+      },
+      {
+        "id": "read-if-else-l1",
+        "title": "If-Else Condition.L1.java",
+        "description": "What gets printed?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        int x = 7;
+        if (x > 5) {
+          System.out.println("Big");
+        } else {
+          System.out.println("Small");
+        }
+      }
+    }"`,
+        "solution": "Big",
+        "testCases": [{ "input": "", "expectedOutput": "Big" }]
+      },
+      {
+        "id": "read-loop-counting-l1",
+        "title": "Simple Loop Counting.L1.java",
+        "description": "What does this print?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        for (int i = 0; i < 3; i++) {
+          System.out.println(i);
+        }
+      }
+    }"`,
+        "solution": "0\n1\n2",
+        "testCases": [{ "input": "", "expectedOutput": "0\n1\n2" }]
+      },
+      {
+        "id": "read-method-call-l1",
+        "title": "Method Call Execution.L1.java",
+        "description": "What will be printed?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void greet() {
+        System.out.println("Hello, Java!");
+      }
+    
+      public static void main(String[] args) {
+        greet();
+      }
+    }"`,
+        "solution": "Hello, Java!",
+        "testCases": [{ "input": "", "expectedOutput": "Hello, Java!" }]
+      },
+      {
+        "id": "read-array-length-l1",
+        "title": "Array Length.L1.java",
+        "description": "What does this output?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println(arr.length);
+      }
+    }"`,
+        "solution": "5",
+        "testCases": [{ "input": "", "expectedOutput": "5" }]
+      },
+      {
+        "id": "read-switch-case-l1",
+        "title": "Switch Case Evaluation.L1.java",
+        "description": "What will be printed?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        int num = 2;
+        switch (num) {
+          case 1: System.out.println("One"); break;
+          case 2: System.out.println("Two"); break;
+          default: System.out.println("Other"); break;
+        }
+      }
+    }"`,
+        "solution": "Two",
+        "testCases": [{ "input": "", "expectedOutput": "Two" }]
+      },
+      {
+        "id": "read-string-methods-l1",
+        "title": "String Method Execution.L1.java",
+        "description": "What is the output?",
+        "points": 100,
+        "timeLimit": 120,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        String text = "Hello";
+        System.out.println(text.toUpperCase());
+      }
+    }"`,
+        "solution": "HELLO",
+        "testCases": [{ "input": "", "expectedOutput": "HELLO" }]
+      },
+
+      {
         "id": "read-scope-chain-01",
         "title": "Scope Chain.L1.js",
         "description": "What gets printed?",
@@ -5152,6 +5318,203 @@ spec:
         testCases: [{ input: "", expectedOutput: "A) <h1>" }]
       },
       {
+        "id": "read-recursive-factorial-l2",
+        "title": "Recursive Factorial.L2.java",
+        "description": "What does this output?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"public class Main {
+      public static int factorial(int n) {
+        if (n == 0) return 1;
+        return n * factorial(n - 1);
+      }
+    
+      public static void main(String[] args) {
+        System.out.println(factorial(4));
+      }
+    }"`,
+        "solution": "24",
+        "testCases": [{ "input": "", "expectedOutput": "24" }]
+      },
+      {
+        "id": "read-array-reversal-l2",
+        "title": "Reverse Array.L2.java",
+        "description": "What gets printed?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"import java.util.Arrays;
+    public class Main {
+      public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4};
+        for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
+          int temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+        }
+        System.out.println(Arrays.toString(arr));
+      }
+    }"`,
+        "solution": "[4, 3, 2, 1]",
+        "testCases": [{ "input": "", "expectedOutput": "[4, 3, 2, 1]" }]
+      },
+      {
+        "id": "read-fibonacci-iteration-l2",
+        "title": "Fibonacci Iteration.L2.java",
+        "description": "What will be printed?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        int n = 6;
+        int a = 0, b = 1;
+        for (int i = 2; i <= n; i++) {
+          int temp = a + b;
+          a = b;
+          b = temp;
+        }
+        System.out.println(b);
+      }
+    }"`,
+        "solution": "8",
+        "testCases": [{ "input": "", "expectedOutput": "8" }]
+      },
+      {
+        "id": "read-switch-missing-break-l2",
+        "title": "Switch Without Break.L2.java",
+        "description": "What is the output?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        int num = 2;
+        switch (num) {
+          case 1: System.out.println("One");
+          case 2: System.out.println("Two");
+          case 3: System.out.println("Three");
+        }
+      }
+    }"`,
+        "solution": "Two\nThree",
+        "testCases": [{ "input": "", "expectedOutput": "Two\nThree" }]
+      },
+      {
+        "id": "read-missing-return-l2",
+        "title": "Missing Return.L2.java",
+        "description": "What does this print?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"public class Main {
+      public static String checkNumber(int n) {
+        if (n > 0) return "Positive";
+        if (n < 0) return "Negative";
+      }
+    
+      public static void main(String[] args) {
+        System.out.println(checkNumber(0));
+      }
+    }"`,
+        "solution": "Compilation error: missing return statement",
+        "testCases": [{ "input": "", "expectedOutput": "Compilation error: missing return statement" }]
+      },
+      {
+        "id": "read-method-overloading-l2",
+        "title": "Method Overloading Behavior.L2.java",
+        "description": "What does this print?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"public class Main {
+      public static void print(int num) {
+        System.out.println("Integer: " + num);
+      }
+    
+      public static void print(double num) {
+        System.out.println("Double: " + num);
+      }
+    
+      public static void main(String[] args) {
+        print(5);
+        print(5.0);
+      }
+    }"`,
+        "solution": "Integer: 5\nDouble: 5.0",
+        "testCases": [{ "input": "", "expectedOutput": "Integer: 5\nDouble: 5.0" }]
+      },
+      {
+        "id": "read-string-immutability-l2",
+        "title": "String Immutability.L2.java",
+        "description": "What is printed?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        String text = "Hello";
+        text.toUpperCase();
+        System.out.println(text);
+      }
+    }"`,
+        "solution": "Hello",
+        "testCases": [{ "input": "", "expectedOutput": "Hello" }]
+      },
+      {
+        "id": "read-for-each-loop-l2",
+        "title": "For-Each Loop Behavior.L2.java",
+        "description": "What does this output?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"import java.util.Arrays;
+    public class Main {
+      public static void main(String[] args) {
+        int[] numbers = {3, 6, 9};
+        for (int num : numbers) {
+          num *= 2;
+        }
+        System.out.println(Arrays.toString(numbers));
+      }
+    }"`,
+        "solution": "[3, 6, 9]",
+        "testCases": [{ "input": "", "expectedOutput": "[3, 6, 9]" }]
+      },
+      {
+        "id": "read-object-reference-l2",
+        "title": "Object Reference Change.L2.java",
+        "description": "What gets printed?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"class Person {
+      String name;
+      Person(String name) {
+        this.name = name;
+      }
+    }
+    
+    public class Main {
+      public static void main(String[] args) {
+        Person p1 = new Person("Alice");
+        Person p2 = p1;
+        p2.name = "Bob";
+        System.out.println(p1.name);
+      }
+    }"`,
+        "solution": "Bob",
+        "testCases": [{ "input": "", "expectedOutput": "Bob" }]
+      },
+      {
+        "id": "read-array-out-of-bounds-l2",
+        "title": "Array Index Out of Bounds.L2.java",
+        "description": "What happens?",
+        "points": 200,
+        "timeLimit": 240,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        int[] arr = {1, 2, 3};
+        System.out.println(arr[3]);
+      }
+    }"`,
+        "solution": "Exception: ArrayIndexOutOfBoundsException",
+        "testCases": [{ "input": "", "expectedOutput": "Exception: ArrayIndexOutOfBoundsException" }]
+      },
+
+      {
         "id": "read-object-reference-l2",
         "title": "Object Reference Equality.L2.js",
         "description": "What is the result of this comparison?",
@@ -5570,6 +5933,380 @@ spec:
       }`,
         solution: "4",
         testCases: [{ input: "", expectedOutput: "4" }]
+      },
+      {
+        "id": "read-multithreading-sync-l3",
+        "title": "Multithreading Synchronization.L3.java",
+        "description": "What does this print?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"class Counter {
+      private int count = 0;
+      public synchronized void increment() {
+        count++;
+      }
+      public int getCount() {
+        return count;
+      }
+    }
+    
+    public class Main {
+      public static void main(String[] args) {
+        Counter counter = new Counter();
+        Thread t1 = new Thread(() -> {
+          for (int i = 0; i < 1000; i++) counter.increment();
+        });
+        Thread t2 = new Thread(() -> {
+          for (int i = 0; i < 1000; i++) counter.increment();
+        });
+    
+        t1.start();
+        t2.start();
+    
+        try {
+          t1.join();
+          t2.join();
+        } catch (InterruptedException e) {}
+    
+        System.out.println(counter.getCount());
+      }
+    }"`,
+        "solution": "2000",
+        "testCases": [{ "input": "", "expectedOutput": "2000" }]
+      },
+      {
+        "id": "read-deadlock-l3",
+        "title": "Deadlock Scenario.L3.java",
+        "description": "What happens?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"class Resource {
+    }
+    
+    public class Main {
+      public static void main(String[] args) {
+        Resource r1 = new Resource();
+        Resource r2 = new Resource();
+    
+        Thread t1 = new Thread(() -> {
+          synchronized (r1) {
+            try { Thread.sleep(100); } catch (InterruptedException e) {}
+            synchronized (r2) {
+              System.out.println("Thread 1 completed");
+            }
+          }
+        });
+    
+        Thread t2 = new Thread(() -> {
+          synchronized (r2) {
+            synchronized (r1) {
+              System.out.println("Thread 2 completed");
+            }
+          }
+        });
+    
+        t1.start();
+        t2.start();
+      }
+    }"`,
+        "solution": "Deadlock occurs, threads get stuck.",
+        "testCases": [{ "input": "", "expectedOutput": "Deadlock occurs, threads get stuck." }]
+      },
+      {
+        "id": "read-custom-hashmap-collision-l3",
+        "title": "HashMap Collision Handling.L3.java",
+        "description": "What will be printed?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"import java.util.HashMap;
+    public class Main {
+      public static void main(String[] args) {
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "A");
+        map.put(1, "B");
+        System.out.println(map.get(1));
+      }
+    }"`,
+        "solution": "B",
+        "testCases": [{ "input": "", "expectedOutput": "B" }]
+      },
+      {
+        "id": "read-lambda-expression-l3",
+        "title": "Lambda Expression Behavior.L3.java",
+        "description": "What does this print?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"import java.util.function.Function;
+    public class Main {
+      public static void main(String[] args) {
+        Function<Integer, Integer> square = x -> x * x;
+        System.out.println(square.apply(5));
+      }
+    }"`,
+        "solution": "25",
+        "testCases": [{ "input": "", "expectedOutput": "25" }]
+      },
+      {
+        "id": "read-class-initialization-order-l3",
+        "title": "Class Initialization Order.L3.java",
+        "description": "What is the output?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"class Parent {
+      Parent() { System.out.println("Parent Constructor"); }
+    }
+    
+    class Child extends Parent {
+      Child() { System.out.println("Child Constructor"); }
+    }
+    
+    public class Main {
+      public static void main(String[] args) {
+        new Child();
+      }
+    }"`,
+        "solution": "Parent Constructor\nChild Constructor",
+        "testCases": [{ "input": "", "expectedOutput": "Parent Constructor\nChild Constructor" }]
+      },
+      {
+        "id": "read-custom-iterator-l3",
+        "title": "Custom Iterator Behavior.L3.java",
+        "description": "What will be printed?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"import java.util.Iterator;
+    import java.util.List;
+    import java.util.Arrays;
+    
+    public class CustomIterator implements Iterator<Integer> {
+      private List<Integer> list;
+      private int index = 0;
+    
+      public CustomIterator(List<Integer> list) {
+        this.list = list;
+      }
+    
+      @Override
+      public boolean hasNext() {
+        return index < list.size();
+      }
+    
+      @Override
+      public Integer next() {
+        return list.get(index++);
+      }
+    
+      public static void main(String[] args) {
+        CustomIterator it = new CustomIterator(Arrays.asList(10, 20, 30));
+        while (it.hasNext()) {
+          System.out.print(it.next() + " ");
+        }
+      }
+    }"`,
+        "solution": "10 20 30",
+        "testCases": [{ "input": "", "expectedOutput": "10 20 30" }]
+      },
+      {
+        "id": "read-custom-exception-l3",
+        "title": "Custom Exception Handling.L3.java",
+        "description": "What happens when this runs?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"class CustomException extends Exception {
+      public CustomException(String message) {
+        super(message);
+      }
+    }
+    
+    public class Main {
+      public static void check(int x) throws CustomException {
+        if (x < 0) throw new CustomException("Negative value not allowed");
+      }
+    
+      public static void main(String[] args) {
+        try {
+          check(-1);
+        } catch (CustomException e) {
+          System.out.println(e.getMessage());
+        }
+      }
+    }"`,
+        "solution": "Negative value not allowed",
+        "testCases": [{ "input": "", "expectedOutput": "Negative value not allowed" }]
+      },
+      {
+        "id": "read-thread-interruption-l3",
+        "title": "Thread Interruption Behavior.L3.java",
+        "description": "What does this print?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"public class Main {
+      public static void main(String[] args) {
+        Thread t = new Thread(() -> {
+          try {
+            Thread.sleep(2000);
+            System.out.println("Completed");
+          } catch (InterruptedException e) {
+            System.out.println("Interrupted");
+          }
+        });
+    
+        t.start();
+        t.interrupt();
+      }
+    }"`,
+        "solution": "Interrupted",
+        "testCases": [{ "input": "", "expectedOutput": "Interrupted" }]
+      },
+      {
+        "id": "read-concurrent-modification-l3",
+        "title": "Concurrent Modification Behavior.L3.java",
+        "description": "What happens when this runs?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"import java.util.*;
+    
+    public class Main {
+      public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        for (Integer num : numbers) {
+          if (num == 2) {
+            numbers.remove(num);
+          }
+        }
+        System.out.println(numbers);
+      }
+    }"`,
+        "solution": "Exception: ConcurrentModificationException",
+        "testCases": [{ "input": "", "expectedOutput": "Exception: ConcurrentModificationException" }]
+      },
+      {
+        "id": "read-reflection-access-l3",
+        "title": "Reflection Access Behavior.L3.java",
+        "description": "What gets printed?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"import java.lang.reflect.Field;
+    
+    class Person {
+      private String name = "Alice";
+    }
+    
+    public class Main {
+      public static void main(String[] args) throws Exception {
+        Person p = new Person();
+        Field field = Person.class.getDeclaredField("name");
+        field.setAccessible(true);
+        System.out.println(field.get(p));
+      }
+    }"`,
+        "solution": "Alice",
+        "testCases": [{ "input": "", "expectedOutput": "Alice" }]
+      },
+      {
+        "id": "read-missing-hashcode-l3",
+        "title": "Missing hashCode Implementation.L3.java",
+        "description": "What happens when executing this code?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"import java.util.HashSet;
+    class Person {
+      String name;
+      Person(String name) { this.name = name; }
+    }
+    
+    public class Main {
+      public static void main(String[] args) {
+        HashSet<Person> set = new HashSet<>();
+        set.add(new Person("Alice"));
+        set.add(new Person("Alice"));
+        System.out.println(set.size());
+      }
+    }"`,
+        "solution": "2 (Because hashCode is not overridden, duplicate detection fails.)",
+        "testCases": [{ "input": "", "expectedOutput": "2" }]
+      },
+      {
+        "id": "read-static-initializer-l3",
+        "title": "Static Initializer Behavior.L3.java",
+        "description": "What gets printed?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"class Test {
+      static { System.out.println("Static Block"); }
+      Test() { System.out.println("Constructor"); }
+    }
+    
+    public class Main {
+      public static void main(String[] args) {
+        new Test();
+        new Test();
+      }
+    }"`,
+        "solution": "Static Block\nConstructor\nConstructor",
+        "testCases": [{ "input": "", "expectedOutput": "Static Block\nConstructor\nConstructor" }]
+      },
+      {
+        "id": "read-memory-leak-l3",
+        "title": "Memory Leak Simulation.L3.java",
+        "description": "What is the issue with this code?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"import java.util.*;
+    
+    public class Main {
+      public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        while (true) {
+          list.add("Memory Leak");
+        }
+      }
+    }"`,
+        "solution": "OutOfMemoryError (Infinite memory allocation causes a crash.)",
+        "testCases": [{ "input": "", "expectedOutput": "Exception: OutOfMemoryError" }]
+      },
+      {
+        "id": "read-immutable-class-l3",
+        "title": "Immutable Class Behavior.L3.java",
+        "description": "What is printed?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"final class Immutable {
+      private final String name;
+      Immutable(String name) { this.name = name; }
+      public String getName() { return name; }
+    }
+    
+    public class Main {
+      public static void main(String[] args) {
+        Immutable obj = new Immutable("Test");
+        System.out.println(obj.getName());
+      }
+    }"`,
+        "solution": "Test",
+        "testCases": [{ "input": "", "expectedOutput": "Test" }]
+      },
+      {
+        "id": "read-circular-dependency-l3",
+        "title": "Circular Dependency Problem.L3.java",
+        "description": "What happens?",
+        "points": 250,
+        "timeLimit": 300,
+        "codeTemplate": `"class A {
+      B b = new B();
+    }
+    
+    class B {
+      A a = new A();
+    }
+    
+    public class Main {
+      public static void main(String[] args) {
+        new A();
+      }
+    }"`,
+        "solution": "StackOverflowError (Infinite recursive object creation.)",
+        "testCases": [{ "input": "", "expectedOutput": "Exception: StackOverflowError" }]
       },
       {
         "id": "read-prototype-override-l3",
